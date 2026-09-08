@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>时迹 隐私政策</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#070A10; --bg-2:#0C1220; --text:#F0F4FA; --text-2:#94A3B8; --text-3:#64748B;
+    --brand:#0EA5E9; --brand-2:#0284C7; --brand-soft:rgba(14,165,233,0.14);
+    --border:rgba(255,255,255,0.09); --border-strong:rgba(255,255,255,0.18);
+  }
+  [data-theme="light"]{
+    --bg:#F8FAFC; --bg-2:#F1F5F9; --text:#0F172A; --text-2:#475569; --text-3:#94A3B8;
+    --border:rgba(15,23,42,0.08); --border-strong:rgba(15,23,42,0.16);
+    --brand-soft:rgba(14,165,233,0.10);
+  }
+  body{font-family:"Noto Sans SC",-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;line-height:1.75;color:var(--text);background:var(--bg);margin:0;padding:0;transition:background .4s,color .4s}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--border);backdrop-filter:blur(14px);z-index:10}
+  .nav{max-width:720px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text);text-decoration:none}
+  .brand img{width:30px;height:30px;border-radius:7px}
+  .brand .light-only,.brand .dark-only{display:none}
+  [data-theme="light"] .brand .light-only{display:block}
+  [data-theme="dark"] .brand .dark-only{display:block}
+  .theme-toggle{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid var(--border-strong);background:var(--bg-2);color:var(--text);cursor:pointer;transition:.25s}
+  .theme-toggle svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  main{max-width:720px;margin:0 auto;padding:28px 20px 60px}
+  h1{font-size:26px;margin:0 0 6px}
+  .updated{color:var(--text-3);font-size:13px;margin-bottom:26px}
+  h2{font-size:18px;margin:32px 0 10px;color:var(--text)}
+  p,li{font-size:15px;color:var(--text-2)}
+  ul{padding-left:22px}
+  li{margin:8px 0}
+  .hl{color:var(--brand);font-weight:600}
+  .box{background:var(--brand-soft);border-left:3px solid var(--brand);padding:14px 16px;border-radius:10px;margin:18px 0;font-size:14.5px}
+  .box strong{color:var(--text)}
+  footer{margin-top:40px;font-size:12px;color:var(--text-3)}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="app-icon-light.png" alt="时迹" class="light-only">
+      <img src="app-icon-dark.png" alt="时迹" class="dark-only">
+      时迹
+    </a>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换主题"></button>
+  </div>
+</header>
+<main>
+  <h1>时迹 隐私政策</h1>
+  <div class="updated">最后更新日期：2026 年 9 月 7 日</div>
+
+  <p>「时迹」（以下简称“本 App”或“我们”）是一款个人用药与身体记录工具。我们深知隐私对你的重要性，本政策说明我们如何收集、使用、存储与保护你的信息。</p>
+
+  <h2>1. 我们收集的信息</h2>
+  <ul>
+    <li><span class="hl">你主动记录的内容</span>：用药计划、服药记录、身体指标（血压、体温、心率、体重、睡眠、步数等）、症状、家庭成员信息、备注。</li>
+    <li><span class="hl">账号信息</span>：通过 Apple 登录获取的匿名用户标识符（User ID）与（可选的）邮箱。</li>
+    <li><span class="hl">健康数据</span>：仅在获得你明确授权后，读取/写入 Apple 健康（HealthKit）中的相关项目，用于参考展示与同步。</li>
+    <li><span class="hl">应用内购买</span>：会员状态由 Apple 通过其支付系统校验，我们不收集你的支付凭证。</li>
+  </ul>
+
+  <h2>2. 我们如何使用信息</h2>
+  <ul>
+    <li>仅用于在本地为你生成记录、提醒、报表与家庭共享（如开启相关功能）。</li>
+    <li>用于 iCloud 同步（仅当你开启会员同步时），数据写入你自己的 Apple iCloud 账户。</li>
+  </ul>
+  <div class="box">
+    <strong>关于健康数据的重要承诺：</strong>我们<span class="hl">不会出售你的任何健康数据</span>，也<span class="hl">不会将健康数据用于广告、营销或第三方数据共享</span>。健康数据默认仅保存在你的设备本地或你自己的 iCloud 中。
+  </div>
+
+  <h2>3. AI 用药助手与第三方服务</h2>
+  <p>「用药助手」功能允许你配置自己拥有的第三方大模型 API（如 OpenAI、DeepSeek 等）。当你使用该功能时：</p>
+  <ul>
+    <li>你输入的问题以及你选择的用药 / 身体记录摘要，会<span class="hl">直接发送至你所配置的第三方服务端点</span>进行处理。</li>
+    <li>我们<span class="hl">不会存储你的对话内容</span>，也不会将这些内容用于除本次问答以外的任何用途。</li>
+    <li>第三方服务对其数据处理方式有其独立隐私政策，请仅在使用你信任的服务商时开启此功能。</li>
+    <li>若你不配置任何第三方密钥，AI 助手将仅使用本机内置规则给出通用用药提醒建议，不会向任何外部服务发送你的数据。</li>
+  </ul>
+
+  <h2>4. 数据存储与位置</h2>
+  <ul>
+    <li><span class="hl">本地优先</span>：默认所有数据存储在你的设备本地。</li>
+    <li><span class="hl">iCloud 同步</span>：开启会员同步后，数据写入你的 Apple iCloud 账户，受 Apple 隐私条款保护。</li>
+    <li>我们不会将你的个人数据上传到我们自己的服务器。</li>
+  </ul>
+
+  <h2>5. 权限说明</h2>
+  <ul>
+    <li><span class="hl">健康（HealthKit）</span>：用于读取/写入健康相关数据，可随时在系统「设置 → 隐私与安全性 → 健康」中关闭。</li>
+    <li><span class="hl">相机</span>：仅用于扫描药盒或药品包装上的条形码，以快速录入药品，不会拍摄或上传照片。</li>
+    <li><span class="hl">面容 ID</span>：用于解锁 App，仅本地验证，不收集任何生物特征数据。</li>
+    <li><span class="hl">通知</span>：用于用药提醒，可在系统设置中关闭。</li>
+  </ul>
+
+  <h2>6. 账号注销与数据删除</h2>
+  <p>你可以在「设置 → 删除账号」中永久删除本机全部用药、身体记录、家庭成员与 iCloud 同步数据，且不可恢复。删除操作不会自动撤销你的 Apple ID 授权；如需彻底解绑，请前往 <a href="https://appleid.apple.com">appleid.apple.com</a> 管理。</p>
+
+  <h2>7. 未成年人</h2>
+  <p>本 App 面向一般用户，不主动收集未成年人的个人信息；未成年人应在监护人指导下使用，且本 App 不用于医疗诊断或替代专业医疗意见。</p>
+
+  <h2>8. 政策的变更</h2>
+  <p>我们可能会不时更新本政策，更新后会在 App 内展示最新版本。</p>
+
+  <h2>9. 联系我们</h2>
+  <p>如对本政策有疑问，请通过 App Store 的评论区或 App 内设置页的反馈入口联系我们。</p>
+
+  <footer>© 2026 时迹. 本政策适用于时迹 iOS 与配套 watchOS 版本。</footer>
+</main>
+
+<script>
+  const root=document.documentElement;
+  const toggle=document.getElementById('themeToggle');
+  const stored=localStorage.getItem('shiji-theme');
+  const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if(stored){root.setAttribute('data-theme',stored);}
+  else if(!prefersDark){root.setAttribute('data-theme','light'); localStorage.setItem('shiji-theme','light');}
+  else{localStorage.setItem('shiji-theme','dark');}
+  function updateIcon(){
+    const isDark=root.getAttribute('data-theme')==='dark';
+    toggle.innerHTML=isDark
+      ? '<svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+      : '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  }
+  updateIcon();
+  toggle.addEventListener('click',()=>{
+    const next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next); localStorage.setItem('shiji-theme',next); updateIcon();
+  });
+</script>
+</body>
+</html>
